@@ -3,11 +3,11 @@
 //
 // >>> Defina aqui as funções que você implementar <<< 
 //
-void putPixel(struct coordenada ponto1, int r, int g, int b, int a) {
-	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x] = r;
-	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 1] = g;
-	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 2] = b;
-	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 3] = a;
+void putPixel(struct coordenada ponto1, struct cores cor) {
+	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x] = cor.red;
+	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 1] = cor.green;
+	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 2] = cor.blue;
+	fb_ptr[ponto1.y * 4 + IMAGE_WIDTH * 4 * ponto1.x + 3] = cor.alpha;
 }
 
 /*
@@ -44,7 +44,12 @@ void MyGlDraw(void) {
     struct coordenada ponto1;
     ponto1.x = 200;
     ponto1.y = 40;
-    putPixel(ponto1, 255, 255, 0, 255);
+    struct cores cor;
+    cor.red = 255;
+    cor.green = 255;
+    cor.blue = 0;
+    cor.alpha = 255;
+    putPixel(ponto1, cor);
    //drawnLine(500, 40, 50, 500, 255, 0, 0, 255);
 
 }
