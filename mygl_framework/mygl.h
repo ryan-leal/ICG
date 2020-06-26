@@ -25,6 +25,6 @@ void MyGlDraw(void);
 //
 void putPixel(struct coordenada ponto1, struct cores cor);
 
-//void drawnLine(int x0, int y0, int x1, int y1, int r, int g, int b, int a);
+void drawnLine(struct coordenada ponto1, struct coordenada ponto2, struct cores cor);
 
 #endif  // MYGL_H
