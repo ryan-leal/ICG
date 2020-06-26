@@ -15,7 +15,7 @@ Durante a resolução, desenvolvemos duas funções: drawnLine() e putPixel(), r
 
 Enfrentamos dificuldades desde o começo quanto a instalação das ferramentas necessárias e que fossem compatíveis com nossos sistemas operacionais, nos gerando atrasos consideráveis em relação ao prazo, feitas as configurações iniciais, lidamos ligeiramente bem com a programação com a linguagem C, resolvendo a função putPixel facilmente como mostrado na screenshot:
 
-![screenshot results](/images/putPixel.png)
+![screenshot results](/Images/putPixel.png)
 
 Porém, com a função de rasterizar linhas as dificuldades foram maiores e acabamos por não obter o resultado necessário dentro do prazo e consequentemente influindo na função de rasterização de triângulos.
 Mesmo diante das adversidades citadas, a atividade nos proporcionou um sentimento de aprendizado maior, colocando "a mão na massa" e tentando implementar os algoritmos que normalmente só são vistos conceitualmente, então como melhoria, acho que fica a lição de preparar melhor o ambiente e elaborar mais testes e melhorias no código.
