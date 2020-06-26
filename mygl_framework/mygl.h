@@ -4,12 +4,13 @@
 #include "core.h"
 #include "frame_buffer.h"
 
-
+//Struct para coordenadas X e Y de cada vértice.
 struct coordenada {
 	int x;
 	int y;
 };
 
+//Struct para variáveis de cores (RGBA).
 struct cores {
 	int red;
 	int green;
