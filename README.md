@@ -9,7 +9,7 @@ Como forma de nos familiarizar com os algoritmos de rasterização, nós deverí
 
 ### Estratégias adotadas
 
-Durante a resolução, desenvolvemos duas funções: drawnLine() e putPixel(), respectivamente para plotar linhas e pontos. Sendo utilizado a estrutura Struct para facilitar o armazenamento das coordenadas dos vértices e dos valores de RGBA.
+Durante a resolução, desenvolvemos duas funções: drawnLine() e putPixel(), respectivamente para rasterizar linhas e pontos. Sendo utilizado a estrutura Struct para facilitar o armazenamento das coordenadas dos vértices e dos valores de RGBA.
 
 ### Resultados, dificuldades e melhorias.
 
