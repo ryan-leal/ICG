@@ -11,7 +11,7 @@ Como forma de nos familiarizar com os algoritmos de rasterização, nós deverí
 
 Durante a resolução, desenvolvemos duas funções: drawnLine() e putPixel(), respectivamente para rasterizar linhas e pontos. Sendo utilizado a estrutura Struct para facilitar o armazenamento das coordenadas dos vértices e dos valores de RGBA.
 
-### Resultados, dificuldades e melhorias.
+### Resultados, dificuldades e melhorias
 
 Enfrentamos dificuldades desde o começo quanto a instalação das ferramentas necessárias e que fossem compatíveis com nossos sistemas operacionais, nos gerando atrasos consideráveis em relação ao prazo, feitas as configurações iniciais, lidamos ligeiramente bem com a programação com a linguagem C, resolvendo a função putPixel facilmente como mostrado na screenshot:
 
@@ -23,3 +23,27 @@ Mesmo diante das adversidades citadas, a atividade nos proporcionou um sentiment
 ### Referências
   James D. Foley, Andries van Dam, Steven K. Feiner, and John F. Hughes. 1990. Computer graphics: principles and practice (2nd ed.). Addison-Wesley Longman Publishing Co., Inc., USA.
   
+## Atividade 2: Compilando e executando um programa OpenGL moderno
+### Sobre a Atividade
+
+Com o objetivo de examinar o funcionamento do ambiente OpenGL e nos familiarizar com a estrutura de um programa usando OpenGL moderno, nos é proposto a compilação e execução de um programa usando OpenGL Moderno.
+
+### Participante 1: Ryan Leal
+
+### Estratégias adotadas
+
+Com a instalação dos pacotes do FreeGLUT e do OpenGL, usou-se o comando: "make -f Makefile" (Imagem abaixo) e logo após, executou-se o arquivo gerado pelo Makefile.
+
+![executando makefile](/Images/makeFile.png)
+
+### Resultados, dificuldades e melhorias
+
+Após a execução do Makefile, geraram-se alguns warnings, mas como explicado no documento do projeto, é algo normal e esperado.
+
+![Warnings](/Images/warnings.png)
+
+Por fim, Executando o arquivo gerado pelo Makefile, obteve-se o resultado esperado (Figura abaixo).
+
+![Resultados](/Images/helloGL.png)
+
+Após a primeira atividade, não foi difícil concluir a segunda, já sabendo a base de um programa usando OpenGL e Makefile.
