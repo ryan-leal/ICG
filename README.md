@@ -47,3 +47,5 @@ Por fim, Executando o arquivo gerado pelo Makefile, obteve-se o resultado espera
 ![Resultados](/Images/helloGL.png)
 
 Após a primeira atividade, não foi difícil concluir a segunda, já sabendo a base de um programa usando OpenGL e Makefile.
+
+Link para o Vídeo com a execução do programa no ambiente (Ryan): https://www.youtube.com/watch?v=2cnoUGwQuho
