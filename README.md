@@ -47,3 +47,32 @@ Por fim, Executando o arquivo gerado pelo Makefile, obteve-se o resultado espera
 Após a primeira atividade, não foi difícil concluir a segunda, já sabendo a base de um programa usando OpenGL e Makefile.
 
 Link para o Vídeo com a execução do programa no ambiente: https://www.youtube.com/watch?v=2cnoUGwQuho
+
+## Atividade 3: Implementação do Pipeline Gráfico
+### Sobre a Atividade
+
+Com o objetivo de praticar os conceitos vistos em aulas sobre o pipeline gráfico, é proposto a resolução de alguns exercícios.
+
+### Estratégias adotadas
+
+Modificando as matrizes presentes no arquivo disponibilizado pelo professor, utilizando cálculos manuais usando matrizes e vetores e com auxílio da biblioteca GLEW e GLM.
+
+### Resultados, dificuldades e melhorias
+
+#### Exercício 1: Escala
+
+Modificando a matriz Model, gerar a modificação de escala como solicitado no exercício, consegui o seguinte resultado:
+
+![Exercício 1](/Images/Ex1_T3.png)
+
+#### Exercício 2: Translação
+
+Modificando a matriz Model, gerar a translação como solicitado no exercício, consegui o seguinte resultado:
+
+![Exercício 2](/Images/Ex2_T3.png)
+
+#### Exercício 3: Projeção Perspectiva
+
+Modificando a matriz Projection, gerar a modificação da perspetiva como solicitado no exercício, consegui o seguinte resultado:
+
+![Exercício 3](/Images/Ex3_T3.png)
