@@ -76,3 +76,21 @@ Modificando a matriz Model, gerar a translação como solicitado no exercício, 
 Modificando a matriz Projection, gerar a modificação da perspetiva como solicitado no exercício, consegui o seguinte resultado:
 
 ![Exercício 3](/Images/Ex3_T3.png)
+
+#### Exercício 4: Posição da Câmera
+
+Modificando a matriz View e utilizando cálculos manuais para a formulação das matrizes que criam o espaço da câmera e a Matriz View, utilizando como base os slides utilizados em aula e os parâmetros presentes no arquivo do trabalho, consegui obter os seguintes resultados:
+
+![Exercício 4](/Images/Ex4_T3.png)
+
+#### Exercício 5: Transformações livres
+
+Aproveitando a liberdade concedida pelo professor, resolvi modificar a matriz View e obtive o seguinte resultado:
+
+![Exercício 5](/Images/Ex5_T3.png)
+
+Tenho em mente que atividade foi muito produtiva, visto que consegui "colocar a mão na massa" e obter resultados interessantes, quando obtive problemas, modificar as matrizes foi uma forma de entender melhor o funcionamento das matrizes que formam o pipeline gráfico, além dos cálculos manuais que gerou uma ótima sensação ao pensar que com os números que eu estava calculando, iriam gerar o resultado que eu almejava, enfim, as experiências com o OpenGL e o pipeline gráfico me renderam ótimos conhecimentos.
+
+### Referências
+
+Slides disponibilizados pelo Professor.
