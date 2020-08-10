@@ -5,23 +5,37 @@ Repositório feito para atividades da disciplina de introdução à computação
 ## Atividade 1: Algoritmos de rasterização
 ### Sobre a Atividade
 
-Como forma de familiarizar com os algoritmos de rasterização, devería-se implementar um algoritmo capaz de rasterizar pontos, linhas e triângulos. Utilizando um framework, fornecido pelo professor, para simular o acesso direto à memória de vídeo.
+Como forma de familiarizar com os algoritmos de rasterização, devería-se implementar um algoritmo capaz de rasterizar pontos, linhas (Algoritmo de Bresenham) e triângulos. Utilizando um framework, fornecido pelo professor, para simular o acesso direto à memória de vídeo.
 
 ### Estratégias adotadas
 
-Durante a resolução, desenvolvi duas funções: drawnLine() e putPixel(), respectivamente para rasterizar linhas e pontos. Sendo utilizado a estrutura Struct para facilitar o armazenamento das coordenadas dos vértices e dos valores de RGBA.
+Durante a atividade desenvolvi 6 funções: abs (retorna o valor absoluto), putPixel (rasteriza um ponto), drawnLineLow (rasteriza linhas no octante inferior), drawnLineHigh (rasteriza linhas no octante superior), drawnLine (decide qual será a função de rasterização de linhas usada) e drawnTriangles (rateriza triângulos), Além disso, foi utilizado a estrutura struct para armazena informações de cor e de coordenadas de cada ponto.
 
 ### Resultados, dificuldades e melhorias
 
-Enfrentei dificuldades desde o começo quanto a instalação das ferramentas necessárias e que fossem compatíveis com o sistema operacional, gerando atrasos consideráveis em relação ao prazo, feitas as configurações iniciais, lidamos ligeiramente bem com a programação com a linguagem C, resolvendo a função putPixel facilmente como mostrado na screenshot:
+#### Exercício 1: Rasterização de pontos
+
+A primeira função criada foi a putPixel, usando o ponteiro que simula o acesso a memória de vídeo e informações de cor e coordenada de um ponto, consegui obter o seguinte resultado (nesse caso, um ponto amarelo):
 
 ![screenshot results](/Images/putPixel.png)
 
-Porém, com a função de rasterizar linhas as dificuldades foram maiores e acabamos por não obter o resultado necessário dentro do prazo e consequentemente influindo na função de rasterização de triângulos.
-Mesmo diante das adversidades citadas, a atividade proporcionou um sentimento de aprendizado maior, colocando "a mão na massa" e tentando implementar os algoritmos que normalmente só são vistos conceitualmente, então como melhoria, acho que fica a lição de preparar melhor o ambiente e elaborar mais testes e melhorias no código.
+#### Exercício 2: Rasterização de linhas
+
+Após concluída a putPixel, comecei a implementar a função de rasterização de linhas usando o algoritmo de Bresenham e no meio desse caminho, a função abs, com isso implementei uma função para rasterizar linhas para o octante superior e inferior e uma para a partir dos valores de X e Y dos dois pontos, decidir qual seria a função de rasterização utilizada, além de implementar a interpolação das cores dos vértices, obtive então como resultado:
+
+![screenshot results 2](/Images/Ex02_Atv1.png)
+
+#### Exercício 3: Rasterização de triângulos
+
+Concluída a função anterior, facilmente, foi possível desenvolver a rasterização de triângulos com interpolação de cores nas linhas, usando a função drawnLine do ponto 1 para o ponto 2, do ponto 2 para o ponto 3 e do ponto 3 para o ponto 1. Então obtive o seguinte resultado (sim, é uma referência a triforce de Zelda):
+
+![screenshot results 2](/Images/Ex03_Atv01.png)
+
+Sendo assim, apesar de diversos problemas obtidos durante o desenvolvimento, especialmente da drawnLine, foi uma experiência gratificante após tantos erros conseguir ver o resultado aparecendo na tela e como um grande mestre uma vez disse: "Melhor professor, o fracasso é", sendo assim nessa atividade consegui sentir o significado dessas palavras.
 
 ### Referências
   James D. Foley, Andries van Dam, Steven K. Feiner, and John F. Hughes. 1990. Computer graphics: principles and practice (2nd ed.). Addison-Wesley Longman Publishing Co., Inc., USA.
+  Slides disponiblizados pelo professor.
   
 ## Atividade 2: Compilando e executando um programa OpenGL moderno
 ### Sobre a Atividade
@@ -94,3 +108,33 @@ Tenho em mente que atividade foi muito produtiva, visto que consegui "colocar a 
 ### Referências
 
 Slides disponibilizados pelo Professor.
+
+## Atividade 4: Implementação de modelos de iluminação
+### Sobre a Atividade
+
+Como forma de familiarizar com os modelos de iluminação tradicionalmente utilizados na rasterização: ambiente, difuso e especular (ou Phong), nos é atribuída a tarefa de implementá-los utilizando o Vertex Shader do OpenGL. 
+
+### Estratégias adotadas
+
+Durante a atividade utilizei as funções dot (para calcular o produto interno dos vetores) e pow (para realizar a operação de potenciação), além da estrutura condicional if-else.
+
+### Resultados, dificuldades e melhorias
+
+#### Exercício 1: Implementação do modelo de Reflexão Difuso
+
+Primeiramente, para calcular o vetor normal N e o vetor que aponta do vértice para a fonte de luz L, utilizei o código disponibilizado pelo professor e então implementei a fórmula para cálculo do modelo de iluminação, utilizando para isso a função dot, para calcular o produto interno dos vetores L e N, obtendo então a seguinte resultado:
+
+![screenshot results](/Images/Ex1_Atv4.png)
+
+#### Exercício 2: Implementação do modelo de Reflexão Especular
+
+Semelhante ao anterior, utilizei a sugestão de código do professor para gerar os vetores R, de reflexão da luz e V, que aponta do vértice para a câmera, e então para implementar a fórmula para cálculo do modelo, utilizei novamente a funçaõ dot, para cálculo do produto interno dos vetores R e V / L e N, além da função pow para realizar a operação de potência no produto interno de R e V, nesse caso elevando a 64 (como solicitado pelo professor), além disso, foi utilizada a estrutura condicional if-else para resolver problemas com valores negativos do produto interno de R e V, para assim gerar o resultado esperado para a atividade, sendo assim, obtive o seguinte resultado:
+
+![screenshot results 2](/Images/Ex02_Atv04.png)
+
+Enfrentei alguns problemas durante o desenvolvimento da atividade, principalmente com o modelo especular, mas dedicando tempo e esforço foi possível encontrar soluções e obter bons resultados.
+
+### Referências
+  Slides disponiblizados pelo professor.
+  https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml
+  https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml
