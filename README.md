@@ -9,7 +9,7 @@ Como forma de familiarizar com os algoritmos de rasterização, devería-se impl
 
 ### Estratégias adotadas
 
-Durante a atividade desenvolvi 6 funções: abs (retorna o valor absoluto), putPixel (rasteriza um ponto), drawnLineLow (rasteriza linhas no octante inferior), drawnLineHigh (rasteriza linhas no octante superior), drawnLine (decide qual será a função de rasterização de linhas usada) e drawnTriangles (rateriza triângulos), Além disso, foi utilizado a estrutura struct para armazena informações de cor e de coordenadas de cada ponto.
+Durante a atividade desenvolvi 6 funções: abs (retorna o valor absoluto), putPixel (rasteriza um ponto), drawnLineLow (rasteriza linhas no octante inferior), drawnLineHigh (rasteriza linhas no octante superior), drawnLine (decide qual será a função de rasterização de linhas usada) e drawnTriangles (rasteriza triângulos), Além disso, foi utilizado a estrutura struct para armazena informações de cor e de coordenadas de cada ponto.
 
 ### Resultados, dificuldades e melhorias
 
@@ -34,7 +34,7 @@ Concluída a função anterior, facilmente, foi possível desenvolver a rasteriz
 Sendo assim, apesar de diversos problemas obtidos durante o desenvolvimento, especialmente da drawnLine, foi uma experiência gratificante após tantos erros conseguir ver o resultado aparecendo na tela e como um grande mestre uma vez disse: "Melhor professor, o fracasso é", sendo assim nessa atividade consegui sentir o significado dessas palavras.
 
 ### Referências
-  James D. Foley, Andries van Dam, Steven K. Feiner, and John F. Hughes. 1990. Computer graphics: principles and practice (2nd ed.). Addison-Wesley Longman Publishing Co., Inc., USA.
+  James D. Foley, Andries van Dam, Steven K. Feiner, and John F. Hughes. 1990. Computer graphics: principles and practice (2nd ed.). Addison-Wesley Longman Publishing Co., Inc., USA.  
   Slides disponiblizados pelo professor.
   
 ## Atividade 2: Compilando e executando um programa OpenGL moderno
@@ -122,7 +122,7 @@ Durante a atividade utilizei as funções dot (para calcular o produto interno d
 
 #### Exercício 1: Implementação do modelo de Reflexão Difuso
 
-Primeiramente, para calcular o vetor normal N e o vetor que aponta do vértice para a fonte de luz L, utilizei o código disponibilizado pelo professor e então implementei a fórmula para cálculo do modelo de iluminação, utilizando para isso a função dot, para calcular o produto interno dos vetores L e N, obtendo então a seguinte resultado:
+Primeiramente, para calcular o vetor normal N e o vetor que aponta do vértice para a fonte de luz L, utilizei o código disponibilizado pelo professor e então implementei a fórmula para cálculo do modelo de iluminação, utilizando para isso a função dot, para calcular o produto interno dos vetores L e N, obtendo então o seguinte resultado:
 
 ![screenshot results](/Images/Ex1_Atv4.png)
 
@@ -135,6 +135,6 @@ Semelhante ao anterior, utilizei a sugestão de código do professor para gerar 
 Enfrentei alguns problemas durante o desenvolvimento da atividade, principalmente com o modelo especular, mas dedicando tempo e esforço foi possível encontrar soluções e obter bons resultados.
 
 ### Referências
-  Slides disponiblizados pelo professor.
-  https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml
+  Slides disponiblizados pelo professor.  
+  https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml  
   https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml
